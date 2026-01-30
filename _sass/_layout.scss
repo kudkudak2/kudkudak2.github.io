@@ -60,23 +60,23 @@
 
 /************ Navigation */
 header {
-  padding-top: 1.5em;
-  padding-bottom: 1em;
-  min-height: 140px;
+  padding-top: 1.25em;
+  padding-bottom: 0.75em;
   @include outer-container;
   display: flex;
-  align-items: flex-end;
-  gap: 1.5em;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9em;
+  text-align: center;
 
   #logo {
-    @include span-columns(2);
     flex-shrink: 0;
 
     img {
-      width: 140px;
-      height: 140px;
-      min-width: 140px;
-      min-height: 140px;
+      width: 124px;
+      height: 124px;
+      min-width: 124px;
+      min-height: 124px;
       object-fit: cover;
       object-position: center 20%;
       border-radius: 50%;
@@ -86,11 +86,10 @@ header {
   }
 
   aside {
-    @include span-columns(10);
-    @include omega();
     display: flex;
     flex-direction: column;
     min-width: 0;
+    align-items: center;
 
     h1 {
       font-family: $font-sans;
@@ -118,7 +117,7 @@ header {
     }
 
     .header-links {
-      margin-top: auto;
+      margin-top: 0.65em;
       margin-bottom: 0;
       padding-top: 0.6em;
 
@@ -144,6 +143,38 @@ header {
           font-size: 0.85em;
           margin: 0;
         }
+      }
+    }
+  }
+
+  // Desktop/tablet layout: photo left, text right
+  @include media($medium-screen) {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    min-height: 140px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1.5em;
+    text-align: left;
+
+    #logo {
+      @include span-columns(2);
+
+      img {
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
+        min-height: 140px;
+      }
+    }
+
+    aside {
+      @include span-columns(10);
+      @include omega();
+      align-items: stretch;
+
+      .header-links {
+        margin-top: auto;
       }
     }
   }
@@ -418,8 +449,8 @@ cells {
 
   .cell-image {
     // Match talks sizing for consistency
-    $thumb-w: 124px;
-    $thumb-h: 78px;
+    $thumb-w: 140px;
+    $thumb-h: 88px;
 
     flex: 0 0 $thumb-w;
     min-width: $thumb-w;
