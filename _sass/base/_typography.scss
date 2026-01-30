@@ -1,14 +1,14 @@
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
-  $serif: 'Lusitana', serif;
-  $serif-2: 'Merriweather', serif;
-  $sans-serif: 'Merriweather Sans', sans-serif;
+  // Serif for long-form (paragraphs, lists); Sans for UI/headers
+  $font-serif: 'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  $font-sans: 'Athletics', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
 
 
 body {
-  font-family: $serif-2;
+  font-family: $font-serif;
   @include clearfix;
   text-align: left;
 }
@@ -57,7 +57,7 @@ body {
   .type {
     border-bottom: 1px solid;
     display: inline-block;
-    font-family: $sans-serif;
+    font-family: $font-sans;
     font-size: 0.7em;
     font-weight: 700;
     margin-bottom: 2em;
@@ -67,27 +67,35 @@ body {
   }
 
   h1 {
-    font-family: $serif;
+    font-family: $font-sans;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.5em;
+    letter-spacing: -0.02em;
 
     @include media($medium-screen) {
       font-size: 2.6em;
     }
   }
 
-  h2 {
-    font-family: $serif-2;
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.6em;
-    margin-bottom: 0.9em;
+  h2, .section-title {
+    font-family: $font-sans;
+    font-size: 1.05em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #222;
 
     @include media($medium-screen) {
-      font-size: 1.2em;
+      font-size: 1.15em;
     }
+  }
+
+  h2:first-of-type, .section-title:first-of-type {
+    margin-top: 0;
   }
 
   code {
@@ -102,16 +110,16 @@ body {
   }
 
   h3 {
-    font-family: $serif;
+    font-family: $font-sans;
     font-size: 1.4em;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.3em;
     margin-bottom: .4em;
   }
 
   p.date {
     color: transparentize($base-font-color, .6);
-    font-family: $serif-2;
+    font-family: $font-serif;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em;
@@ -119,7 +127,7 @@ body {
 
   a.read-more {
     display: inline-block;
-    font-family: $sans-serif;
+    font-family: $font-sans;
     font-size: 0.8em;
     font-weight: 700;
     margin-left: 0.2em;
@@ -127,7 +135,7 @@ body {
     text-transform: uppercase;
 
     span {
-      font-family: $serif;
+      font-family: $font-serif;
       font-size: 1.5em;
       font-style: normal;
       position: absolute;
@@ -141,7 +149,7 @@ body {
   }
 
   p.author {
-    font-family: $serif-2;
+    font-family: $font-serif;
     font-style: italic;
   }
 
@@ -153,20 +161,20 @@ picture {
 }
 
   ul, li, ol {
-    font-family: $serif-2;
-    font-size: 0.9em;
+    font-family: $font-serif;
+    font-size: 0.95em;
+    line-height: 1.6;
   }
 
   p {
-  font-family: $serif-2;
-    font-size: 0.9em;
-   
-   line-height: 1.6em;
+    font-family: $font-serif;
+    font-size: 1em;
+    line-height: 1.65em;
     margin-bottom: $spacing-paragraph;
 
     span {
-      font-family: $sans-serif;
-      font-weight: 700;
+      font-family: $font-sans;
+      font-weight: 600;
     }
   }
 p + ul {  

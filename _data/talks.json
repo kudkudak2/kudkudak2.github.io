@@ -1,18 +1,51 @@
 [
-    {
-    "img": "/assets/img/talks/dlworkshop.png",
-    "title": "Optimization in Deep Learning",
-    "content": "Lecture @ <a href=\"http://gmum.net/index.php?m=dlworkshop18\"> GMUM Deep Learning Workshop </a>",
-    "details": "2018, Cracow, Poland",
-    "pdf": "https://www.dropbox.com/s/oas04ji90pvcyo9/main.pdf?dl=0"
+  {
+    "img": "/assets/img/talks/slas2026.png",
+    "title": "μSpaceM1: a new type of molecular space based on HTE chemical data",
+    "content": "SLAS 2026, Boston, USA.",
+    "details": "2026. Podium presentation.",
+    "url": "#"
   },
-
-    {
-    "img": "/assets/img/talks/three.jpg",
-    "title": "Understanding How Deep Networks Learn",
-    "content": "Invited talk @ <a href=\"plinml.mimuw.edu.pl\"> PL in ML </a>",
-    "details": "2017, Warsaw, Poland",
-    "video": "https://www.youtube.com/watch?v=280-IU7VEiY",
-    "pdf": "https://drive.google.com/file/d/1FfSKTpSeCC5pmfilN7zsOG8JrOtzRi2I/view"
+  {
+    "img": "/assets/img/talks/slas2025.png",
+    "title": "Unlocking Chemistry Automation requires Superhuman Models, Not Just Robots",
+    "content": "SLAS 2025 Europe, Hamburg, Germany.",
+    "details": "2025. Invited talk.",
+    "url": "#"
   },
+  {
+    "img": "/assets/img/talks/amld_logo.jpeg",
+    "title": "SpaceM1: Using HTE to Discover Novel Chemistry",
+    "content": "AMLD Days 2025, Lausanne, Switzerland.",
+    "details": "2025. Keynote, AI & Molecular World track.",
+    "url": "#"
+  },
+  {
+    "img": "/assets/img/talks/mlss2025.png",
+    "title": "How the quiet high-throughput revolution in synthetic chemistry will change drug discovery forever",
+    "content": "MLSS 2025 School on Drug Discovery, Krakow, Poland.",
+    "details": "2025. Invited talk.",
+    "url": "#"
+  },
+  {
+    "img": "/assets/img/talks/mlss2023.png",
+    "title": "Deep Learning in the Light of the Simplicity Bias",
+    "content": "Machine Learning Summer School 2023, Poland.",
+    "details": "2023. Invited talk.",
+    "url": "https://www.youtube.com/watch?v=PV2EAkcgc7o"
+  },
+  {
+    "img": "/assets/img/talks/vladimir_podcast.png",
+    "title": "How to Get Lazy Neural Networks to Produce Drugs",
+    "content": "Biznes Myśli (BM89) [PL].",
+    "details": "2020. Podcast.",
+    "url": "https://open.spotify.com/episode/6EEdEny8P89yeGx60kcA2q"
+  },
+  {
+    "img": "/assets/img/talks/ds_at_home_podcast.png",
+    "title": "What if I train a neural network with random data?",
+    "content": "Data Science at Home (Ep. 87).",
+    "details": "2019. Podcast.",
+    "url": "https://hmpljs.forem.com/datascience-at-home/what-if-i-train-a-neural-network-with-random-data-with-stanislaw-jastrzebski-ep-87"
+  }
 ]

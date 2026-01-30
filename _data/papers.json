@@ -1,4 +1,25 @@
 [
+     {
+     "img": "/assets/img/publications/scaling.webp",
+     "title": "Scaling High-Throughput Experimentation Unlocks Robust Reaction-Outcome Prediction",
+     "details": "NeurIPS 2025 Workshop AI4Science",
+     "content": "M. Sadowski, L. Sztukiewicz, M. Wyrzykowska, [...], S. Jastrzebski",
+     "url": "https://openreview.net/pdf?id=2w8twuXdPH"
+  },
+     {
+     "img": "/assets/img/publications/trustworthy.webp",
+     "title": "Trustworthy Retrosynthesis: Eliminating Hallucinations with a Diverse Ensemble of Reaction Scorers",
+     "details": "NeurIPS 2025 Workshop AI4Science",
+     "content": "M. Sadowski, [...], S. Jastrzebski",
+     "url": "https://arxiv.org/abs/2510.10645"
+  },
+     {
+     "img": "/assets/img/publications/adapters.png",
+     "title": "Parameter-Efficient Transfer Learning for NLP",
+     "details": "International Conference on Machine Learning 2019",
+     "content": "S. Houlsby, A. Giurgiu, S. Jastrzebski, B. Morrone, Q. de Laroussilhe, A. Gesmundo, M. Attariyan, S. Gelly",
+     "pdf": "https://arxiv.org/abs/1902.00751"
+  },
      {   
      "img": "/assets/img/publications/22_differences.png",    
      "title": "Differences between human and machine perception in medical diagnosis",    

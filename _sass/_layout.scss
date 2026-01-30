@@ -10,30 +10,148 @@
   }  
 }
 
+/************ Content sections (two-column: label left, body right) */
+.content-sections {
+  margin-bottom: 2em;
+
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em 1.5em;
+    align-items: start;
+    margin-bottom: 1.5em;
+
+    @include media($medium-screen) {
+      grid-template-columns: 110px 1fr;
+      gap: 0.25em 2em;
+      margin-bottom: 1.75em;
+    }
+  }
+
+  .content-section-label {
+    font-family: $font-sans;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #222;
+    line-height: 1.3;
+    padding-top: 0.1em;
+
+    @include media($medium-screen) {
+      font-size: 0.85em;
+      position: sticky;
+      top: 0.5em;
+    }
+  }
+
+  .content-section-body {
+    min-width: 0;
+
+    p {
+      margin-bottom: $spacing-paragraph;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 /************ Navigation */
 header {
-  padding-top: 1em;
-  height: 150px;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  min-height: 140px;
   @include outer-container;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5em;
+
+  #logo {
+    @include span-columns(2);
+    flex-shrink: 0;
+
+    img {
+      width: 140px;
+      height: 140px;
+      min-width: 140px;
+      min-height: 140px;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 50%;
+      display: block;
+      aspect-ratio: 1 / 1;
+    }
+  }
 
   aside {
-    @include span-columns(10); 
+    @include span-columns(10);
     @include omega();
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    h1 {
+      font-family: $font-sans;
+      color: #111;
+      margin-bottom: 0.15em;
+      font-size: 1.75em;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+
+      @include media($medium-screen) {
+        font-size: 2em;
+      }
+    }
+
+    h2.headline {
+      font-family: $font-sans;
+      font-size: 0.9em;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #555;
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+    }
+
+    .header-links {
+      margin-top: auto;
+      margin-bottom: 0;
+      padding-top: 0.6em;
+
+      a.flat-cv {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5em;
+        height: 1.5em;
+        padding: 0;
+        margin-right: 0.4em;
+        border-radius: 3px;
+        background: #222;
+        color: #fff;
+        transition: background 0.15s ease, transform 0.15s ease;
+
+        &:hover {
+          background: #000;
+          transform: scale(1.05);
+        }
+
+        i, .ai {
+          font-size: 0.85em;
+          margin: 0;
+        }
+      }
+    }
   }
 
   title {
     color: $base-font-color;
     @include span-columns(10 of 10);
     @include fill-parent();
-  //  font-size: 2em;
-  }
-
-  #logo {
-    @include span-columns(2);
-    img {
-//       transform: scale(0.8, 0.8); 
-    }
   }
 
   nav {
@@ -171,6 +289,8 @@ cells {
 
 
   .cell-content {
+    font-size: 0.9em;
+
     h1 {
       font-size: 1em;
       margin: 0 0 0.5em 0;
@@ -184,6 +304,147 @@ cells {
     }
   }
 }
+}
+
+/************ Talks: compact card rows */
+.cells--talks {
+  .cell {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+
+  .cell-image,
+  .cell-content {
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+  .cell-image {
+    flex: 0 0 104px;
+    min-width: 104px;
+    width: 104px;
+    height: 66px;
+    padding-right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  .cell-content {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 0.95em;
+  }
+
+  .talk-title {
+    margin: 0 0 0.25em 0;
+    font-family: $font-sans;
+    font-size: 1.05em;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #555;
+  }
+
+  .talk-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75em;
+    flex-wrap: wrap;
+  }
+
+  .talk-meta-text {
+    color: transparentize(#333, 0.35);
+    font-size: 0.9em;
+    line-height: 1.35;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .talk-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    font-family: $font-sans;
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap;
+    color: $action-color;
+    opacity: 0.95;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+
+  @include media($medium-screen) {
+    .talk-meta-text {
+      font-size: 0.92em;
+    }
+  }
+}
+
+/************ Publications: consistent, smaller thumbnails */
+.cells--papers {
+  .cell {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+
+  .cell-image,
+  .cell-content {
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+  .cell-image {
+    // Slightly smaller than talks for a more minimalist vibe
+    $thumb-w: 92px;
+    $thumb-h: 58px;
+
+    flex: 0 0 $thumb-w;
+    min-width: $thumb-w;
+    width: $thumb-w;
+    height: $thumb-h;
+    padding-right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      padding: 6px; // consistent whitespace for varying aspect ratios
+    }
+  }
+
+  .cell-content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
 }
 
 /******* Buttons */
