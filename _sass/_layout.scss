@@ -404,7 +404,7 @@ cells {
   .cell {
     display: flex;
     gap: 1em;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 0.6em;
     padding-bottom: 0.6em;
   }
@@ -417,9 +417,9 @@ cells {
   }
 
   .cell-image {
-    // Slightly smaller than talks for a more minimalist vibe
-    $thumb-w: 92px;
-    $thumb-h: 58px;
+    // Match talks sizing for consistency
+    $thumb-w: 124px;
+    $thumb-h: 78px;
 
     flex: 0 0 $thumb-w;
     min-width: $thumb-w;
@@ -428,16 +428,14 @@ cells {
     padding-right: 0;
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.03);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: transparent;
 
     > img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       object-position: center;
       display: block;
-      padding: 6px; // consistent whitespace for varying aspect ratios
     }
   }
 
