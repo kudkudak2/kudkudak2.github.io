@@ -7,13 +7,6 @@
     "url": "#"
   },
   {
-    "img": "/assets/img/talks/mlss2026.png",
-    "title": "How the HTE revolution in chemistry will change drug discovery, MLSS 2026",
-    "content": "MLSS 2026.",
-    "details": "2026. Talk.",
-    "url": "https://www.youtube.com/watch?v=8YbYX_duYxI"
-  },
-  {
     "img": "/assets/img/talks/slas2025.png",
     "title": "Unlocking Chemistry Automation requires Superhuman Models, Not Just Robots",
     "content": "SLAS 2025 Europe, Hamburg, Germany.",
@@ -32,7 +25,7 @@
     "title": "How the quiet high-throughput revolution in synthetic chemistry will change drug discovery forever",
     "content": "MLSS 2025 School on Drug Discovery, Krakow, Poland.",
     "details": "2025. Invited talk.",
-    "url": "#"
+    "url": "https://www.youtube.com/watch?v=8YbYX_duYxI"
   },
   {
     "img": "/assets/img/talks/mlss2023.png",
