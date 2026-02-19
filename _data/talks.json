@@ -35,6 +35,13 @@
     "url": "https://www.youtube.com/watch?v=PV2EAkcgc7o"
   },
   {
+    "img": "/assets/img/talks/industrialai.jpeg",
+    "title": "Interview for Industrial AI Podcast",
+    "content": "Industrial AI Podcast.",
+    "details": "Podcast.",
+    "url": "https://open.spotify.com/episode/4WjqSRInrMzcfgFLin9wf6?si=kXjqBFAZS2iR4u9UeS1-Rg"
+  },
+  {
     "img": "/assets/img/talks/vladimir_podcast.png",
     "title": "How to Get Lazy Neural Networks to Produce Drugs",
     "content": "Biznes Myśli (BM89) [PL].",
