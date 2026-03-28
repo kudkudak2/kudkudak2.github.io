@@ -2,7 +2,7 @@
 permalink:           pretty
 
 # Setup
-title:               Stanislaw Kamil Jastrzebski
+title:               Stan Kamil Jastrzebski
 url:                 http://kudkudak.github.io
 paginate:            1
 baseurl:             ""
@@ -16,7 +16,7 @@ sass:
 
 # About/contact
 author:
-  name:              Stanislaw Kamil Jastrzebski
+  name:              Stan Kamil Jastrzebski
   url:               https://twitter.com/kudkudakp
   email:             staszek.jastrzebski@gmail.com
 
