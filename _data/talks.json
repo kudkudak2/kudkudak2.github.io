@@ -36,32 +36,32 @@
   },
   {
     "img": "/assets/img/talks/kami_think_thank.svg",
-    "title": "Kami Think Thank: From Models to Medicine",
-    "content": "2006 (coming).",
+    "title": "Kami Think Thank: From Models to Medicine (July 2026)",
+    "content": "",
     "details": "",
     "type": "podcast",
     "url": "https://open.spotify.com/show/0nilXARDEUUycNoHxCH3jj?si=8831c779c5904bea&nd=1&dlsi=d121c65957d5454c"
   },
   {
     "img": "/assets/img/talks/industrialai.jpeg",
-    "title": "Industrial AI Podcast",
-    "content": "2026.",
+    "title": "Industrial AI Podcast (February 2026)",
+    "content": "",
     "details": "",
     "url": "https://www.youtube.com/watch?v=2DlKsITuYDc",
     "type": "podcast"
   },
   {
     "img": "/assets/img/talks/vladimir_podcast.png",
-    "title": "Biznes Myśli (BM89) : How to Get Lazy Neural Networks to Produce Drugs",
-    "content": "2020. [PL].",
+    "title": "Biznes Myśli (BM89): How to Get Lazy Neural Networks to Produce Drugs (August 2020)",
+    "content": "",
     "details": "",
     "url": "https://open.spotify.com/episode/6EEdEny8P89yeGx60kcA2q",
     "type": "podcast"
   },
   {
     "img": "/assets/img/talks/ds_at_home_podcast.png",
-    "title": "Data Science at Home: What if I train a neural network with random data?",
-    "content": "2019. Ep. 87.",
+    "title": "Data Science at Home: What if I train a neural network with random data? (November 2019)",
+    "content": "",
     "details": "",
     "url": "https://hmpljs.forem.com/datascience-at-home/what-if-i-train-a-neural-network-with-random-data-with-stanislaw-jastrzebski-ep-87",
     "type": "podcast"
