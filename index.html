@@ -63,7 +63,7 @@ permalink: index.html
 
 <cells class="cells--talks">
     {% for entry in site.data.talks %}
-    {% unless entry.details contains 'Podcast' %}
+    {% unless entry.type == 'podcast' %}
     <div class="cell">
         <div class="cell-image">
             <img src="{{ entry.img }}" alt="">
@@ -91,7 +91,7 @@ permalink: index.html
 
 <cells class="cells--talks">
     {% for entry in site.data.talks %}
-    {% if entry.details contains 'Podcast' %}
+    {% if entry.type == 'podcast' %}
     <div class="cell">
         <div class="cell-image">
             <img src="{{ entry.img }}" alt="">
