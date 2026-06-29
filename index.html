@@ -72,7 +72,7 @@ permalink: index.html
             <img src="{{ entry.img }}" alt="{{ entry.source }} logo">
         </div>
         <div class="cell-content">
-            <h3 class="media-title">{{ entry.title }}</h3>
+            <h3 class="media-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
             <div class="media-meta">
                 <div class="media-meta-text">
                     <span class="media-source">{{ entry.source }}</span>
@@ -80,7 +80,6 @@ permalink: index.html
                     <span class="media-sep">·</span><span class="media-details">{{ entry.details }}</span>
                     {% endif %}
                 </div>
-                <a href="{{ entry.url }}" class="media-link"><i class="fa fa-link"></i> read</a>
             </div>
         </div>
     </div>
@@ -97,7 +96,13 @@ permalink: index.html
             <img src="{{ entry.img }}" alt="">
         </div>
         <div class="cell-content">
-            <h3 class="talk-title">{{ entry.title }}</h3>
+            <h3 class="talk-title">
+                {% if entry.url and entry.url != '#' %}
+                <a href="{{ entry.url }}">{{ entry.title }}</a>
+                {% else %}
+                {{ entry.title }}
+                {% endif %}
+            </h3>
             <div class="talk-meta">
                 <div class="talk-meta-text">
                     <span class="talk-venue">{{ entry.content }}</span>
@@ -105,9 +110,6 @@ permalink: index.html
                     <span class="talk-sep">·</span><span class="talk-details">{{ entry.details }}</span>
                     {% endif %}
                 </div>
-                {% if entry.url and entry.url != '#' %}
-                <a href="{{ entry.url }}" class="talk-link"><i class="fa fa-link"></i> watch / listen</a>
-                {% endif %}
             </div>
         </div>
     </div>
@@ -125,7 +127,7 @@ permalink: index.html
             <img src="{{ entry.img }}" alt="">
         </div>
         <div class="cell-content">
-            <h3 class="talk-title">{{ entry.title }}</h3>
+            <h3 class="talk-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
             <div class="talk-meta">
                 {% if entry.content != '' or entry.details != '' %}
                 <div class="talk-meta-text">
@@ -140,7 +142,6 @@ permalink: index.html
                     {% endif %}
                 </div>
                 {% endif %}
-                <a href="{{ entry.url }}" class="talk-link"><i class="fa fa-link"></i> watch / listen</a>
             </div>
         </div>
     </div>

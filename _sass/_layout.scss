@@ -386,6 +386,15 @@ cells {
     font-weight: 600;
     line-height: 1.25;
     color: #555;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $action-color;
+        text-decoration: underline;
+      }
+    }
   }
 
   .talk-meta {
@@ -404,23 +413,6 @@ cells {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .talk-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    font-family: $font-sans;
-    font-size: 0.85em;
-    font-weight: 600;
-    white-space: nowrap;
-    color: $action-color;
-    opacity: 0.95;
-
-    &:hover {
-      opacity: 1;
-      text-decoration: underline;
-    }
   }
 
   @include media($medium-screen) {
@@ -484,6 +476,15 @@ cells {
     font-weight: 600;
     line-height: 1.25;
     color: #555;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $action-color;
+        text-decoration: underline;
+      }
+    }
   }
 
   .media-meta {
@@ -501,22 +502,6 @@ cells {
     min-width: 0;
   }
 
-  .media-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    font-family: $font-sans;
-    font-size: 0.85em;
-    font-weight: 600;
-    white-space: nowrap;
-    color: $action-color;
-    opacity: 0.95;
-
-    &:hover {
-      opacity: 1;
-      text-decoration: underline;
-    }
-  }
 }
 
 /************ Publications: consistent, smaller thumbnails */
