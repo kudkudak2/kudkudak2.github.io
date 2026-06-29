@@ -63,6 +63,30 @@ permalink: index.html
 </div>
 <span id="news-toggle" class="news-toggle" role="button" tabindex="0" title="Show older news"><span class="news-toggle-icon">›</span> Older news</span>
 
+<h2 class="section-title" id="media">Media Coverage</h2>
+
+<cells class="cells--media">
+    {% for entry in site.data.media %}
+    <div class="cell">
+        <div class="cell-image">
+            <img src="{{ entry.img }}" alt="{{ entry.source }} logo">
+        </div>
+        <div class="cell-content">
+            <h3 class="media-title">{{ entry.title }}</h3>
+            <div class="media-meta">
+                <div class="media-meta-text">
+                    <span class="media-source">{{ entry.source }}</span>
+                    {% if entry.details != '' %}
+                    <span class="media-sep">·</span><span class="media-details">{{ entry.details }}</span>
+                    {% endif %}
+                </div>
+                <a href="{{ entry.url }}" class="media-link"><i class="fa fa-link"></i> read</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</cells>
+
 <h2 class="section-title" id="talks">Recent Talks</h2>
 
 <cells class="cells--talks">

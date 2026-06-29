@@ -430,6 +430,95 @@ cells {
   }
 }
 
+/************ Media coverage: compact logo rows */
+.cells--media {
+  .cell {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+
+  .cell-image,
+  .cell-content {
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+  .cell-image {
+    flex: 0 0 132px;
+    min-width: 132px;
+    width: 132px;
+    height: 64px;
+    padding-right: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      padding: 0.7em;
+    }
+  }
+
+  .cell-content {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 0.95em;
+  }
+
+  .media-title {
+    margin: 0 0 0.25em 0;
+    font-family: $font-sans;
+    font-size: 1.05em;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #555;
+  }
+
+  .media-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75em;
+    flex-wrap: wrap;
+  }
+
+  .media-meta-text {
+    color: transparentize(#333, 0.35);
+    font-size: 0.9em;
+    line-height: 1.35;
+    min-width: 0;
+  }
+
+  .media-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    font-family: $font-sans;
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap;
+    color: $action-color;
+    opacity: 0.95;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+}
+
 /************ Publications: consistent, smaller thumbnails */
 .cells--papers {
   .cell {
