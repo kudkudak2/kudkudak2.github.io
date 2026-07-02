@@ -145,21 +145,10 @@ header {
         }
 
         .substack-icon {
-          width: 0.78em;
+          display: block;
+          width: 0.9em;
           height: 0.9em;
-          display: inline-block;
-          position: relative;
-          border-top: 0.18em solid currentColor;
-          border-bottom: 0.42em solid currentColor;
-
-          &:before {
-            content: "";
-            position: absolute;
-            top: 0.17em;
-            left: 0;
-            right: 0;
-            border-top: 0.18em solid currentColor;
-          }
+          margin: 0;
         }
       }
     }
