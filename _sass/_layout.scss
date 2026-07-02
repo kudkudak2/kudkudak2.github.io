@@ -139,6 +139,16 @@ header {
           transform: scale(1.05);
         }
 
+        &.substack-link {
+          background: transparent;
+          color: #222;
+
+          &:hover {
+            background: transparent;
+            color: #000;
+          }
+        }
+
         i, .ai {
           font-size: 0.85em;
           margin: 0;
@@ -146,9 +156,11 @@ header {
 
         .substack-icon {
           display: block;
-          width: 0.9em;
-          height: 0.9em;
+          width: 1em;
+          height: 1em;
           margin: 0;
+          fill: currentColor;
+          transform: translateY(-0.02em);
         }
       }
     }
