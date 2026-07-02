@@ -156,11 +156,15 @@ header {
 
         .substack-icon {
           display: block;
-          width: 0.86em;
-          height: 0.86em;
+          width: 0.82em;
+          height: 0.82em;
           margin: 0;
-          fill: currentColor;
-          transform: translate(0.015em, -0.02em);
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 2.2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          transform: translate(0, 0.09em);
         }
       }
     }
