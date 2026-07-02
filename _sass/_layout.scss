@@ -140,12 +140,12 @@ header {
         }
 
         &.substack-link {
-          background: transparent;
-          color: #222;
+          background: #222;
+          color: #fff;
 
           &:hover {
-            background: transparent;
-            color: #000;
+            background: #000;
+            color: #fff;
           }
         }
 
@@ -156,11 +156,11 @@ header {
 
         .substack-icon {
           display: block;
-          width: 1em;
-          height: 1em;
+          width: 0.86em;
+          height: 0.86em;
           margin: 0;
           fill: currentColor;
-          transform: translateY(-0.02em);
+          transform: translate(0.015em, -0.02em);
         }
       }
     }

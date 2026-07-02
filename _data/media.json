@@ -12,5 +12,19 @@
     "title": "OpenAI and Molecule.one report a near-autonomous AI chemist that improved a stubborn coupling reaction",
     "details": "Research & Development World, June 2026.",
     "url": "https://www.rdworldonline.com/openai-and-molecule-one-report-a-near-autonomous-ai-chemist-that-improved-a-stubborn-coupling-reaction/"
+  },
+  {
+    "img": "/assets/img/media/techcrunch.svg",
+    "source": "TechCrunch",
+    "title": "Molecule.one grows its drug synthesis AI platform with a $4.6M seed round",
+    "details": "TechCrunch, June 2021.",
+    "url": "https://techcrunch.com/2021/06/01/molecule-one-grows-its-drug-synthesis-ai-platform-with-a-4-6m-seed-round/"
+  },
+  {
+    "img": "/assets/img/media/techcrunch.svg",
+    "source": "TechCrunch",
+    "title": "Molecule.one uses machine learning to make synthesizing new drugs a snap",
+    "details": "TechCrunch Startup Battlefield, October 2019.",
+    "url": "https://techcrunch.com/2019/10/02/molecule-one-uses-machine-learning-to-make-synthesizing-new-drugs-a-snap/"
   }
 ]

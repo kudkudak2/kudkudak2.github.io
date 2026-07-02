@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 64" role="img" aria-labelledby="title">
+  <title id="title">TechCrunch</title>
+  <rect width="132" height="64" fill="#ffffff"/>
+  <g fill="#00a562" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="16" y="39" font-size="26">TC</text>
+    <text x="55" y="27" font-size="14">Tech</text>
+    <text x="55" y="43" font-size="14">Crunch</text>
+  </g>
+</svg>
