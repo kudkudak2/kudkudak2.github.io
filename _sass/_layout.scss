@@ -95,10 +95,12 @@
   }
 
   .blog-post-date {
-    font-family: $font-sans;
     color: #777;
-    font-size: 0.9em;
-    margin-top: 0;
+    font-size: 0.82em;
+
+    &:before {
+      content: " · ";
+    }
   }
 
   p {
