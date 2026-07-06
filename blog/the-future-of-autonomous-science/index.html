@@ -1,0 +1,47 @@
+---
+layout: default
+title: The future of autonomous science may be both human-like and machine-like
+permalink: /blog/the-future-of-autonomous-science/
+---
+
+<article class="blog-post">
+  <p class="blog-post-back"><a href="/index.html#writing">Back to writing</a></p>
+
+  <header class="blog-post-header">
+    <h1>The future of autonomous science may be both human-like and machine-like</h1>
+    <p class="blog-post-subtitle">A deeper look at how the OAI-M1-03 discovery was made</p>
+    <p class="blog-post-meta">Stanislaw Jastrzebski &middot; Jul 02, 2026 &middot; <a href="https://sjastrzebski.substack.com/p/the-future-of-autonomous-science">Substack</a></p>
+  </header>
+
+  <p>On June 17, OpenAI <a href="https://openai.com/index/ai-chemist-improves-reaction/">published</a> a blog post describing how Maria AI &amp; Lab (<a href="https://www.molecule.one/">molecule.one</a>&rsquo;s platform) and GPT-5.4 discovered that TEMPO boosts the yield of Chan&ndash;Lam coupling. Chan-Lam coupling is a chemical reaction important to producing certain drugs. We called the discovery OAI-M1-03.</p>
+
+  <p>What made the project distinctive was that (1) the system was given a highly open-ended research objective and operated largely autonomously, (2) it produced a novel, practically useful, and publishable discovery, and (3) the entire process&mdash;from the initial idea to a completed preprint&mdash;took just three months.</p>
+
+  <p>We recently published <a href="https://cdn.openai.com/pdf/609ab000-868b-4d20-9b5b-b5bab8c5bf3a/blogpost_cot.pdf">an abridged version of the &ldquo;chain-of-thought&rdquo;</a> that reflects the reasoning behind the discovery, and marks when and how human chemists guided the process.</p>
+
+  <p>I led the project from molecule.one&rsquo;s side and wanted to share a few reflections on what the published reasoning trace reveals.</p>
+
+  <p>The 9,574-word reasoning trace is not an easy read, but it offers something rare: a window into how a frontier AI system generated, revised, and prioritized scientific ideas. Reading it made me think differently about what autonomous science might ultimately look like.</p>
+
+  <p>Our chemists prompted GPT-5.4 with high-level research directions of the form &ldquo;consider whether high level strategy X can be usefully applied to improve reaction class Y&rdquo; (see the top of the document).</p>
+
+  <p>GPT-5.4 was used across three phases to generate and rank proposals according to specific chemical criteria such as tractability and novelty. At the end of each of three phases, a short list of the AI&rsquo;s highest-ranked proposals were reviewed by human chemists, who made high-level &ldquo;steering prompts&rdquo; to guide the AI. A short description of the input is included at the top of each section. For example, after the first phase, human chemists asked the model to lock in the proposed scope of substrates.</p>
+
+  <p>The reasoning trace suggests several interesting things.</p>
+
+  <p><strong>Open-ended.</strong> The goal was intentionally broad: improve Chan&ndash;Lam coupling for large-scale manufacturing. GPT-5.4 was not choosing from a fixed menu of additives or conditions. It had to translate a high-level research direction into testable hypotheses. This differs from many prior demonstrations of scientific LLMs, which ask narrower questions within a predefined search space.</p>
+
+  <p><strong>Novelty came from cross-pollination.</strong> Four reviewers judged the <a href="https://cdn.openai.com/pdf/7136bb75-6d47-4834-8fff-c07c0e06708a/tempo-improves-generality-and-decreases-oxidative-deboronation.pdf">results</a> as impactful and novel: GPT-5.4 suggested using TEMPO, which chemists had not considered as a systematic way to increase the yield of Chan&ndash;Lam coupling. The model appeared to connect TEMPO&rsquo;s use in adjacent oxidative chemistry with its more familiar role in Chan&ndash;Lam coupling as a mechanistic probe for radical pathways. See also the <a href="https://cdn.openai.com/pdf/7136bb75-6d47-4834-8fff-c07c0e06708a/tempo-improves-generality-and-decreases-oxidative-deboronation.pdf">preprint</a> for a detailed discussion of novelty. In effect, the AI was speculating on a possible crossover effect.</p>
+
+  <p><strong>Engineered serendipity.</strong> The system was initially doubtful that TEMPO would help the reaction. It saw TEMPO as an uncertain &ldquo;mechanistic probe&rdquo; to gain scientific understanding, not as a useful reagent to improve yields. However, thanks to the unprecedented volume of experiments in the Maria Lab&mdash;10,000 experiments in two cycles is more than a chemist usually runs in a decade&mdash;the models got data showing that TEMPO had a surprising impact on reaction yield, uniquely among multiple tested oxidants. If fewer experiments were available, the LLM would likely have deprioritized testing TEMPO, and never found the impactful discovery.</p>
+
+  <p><strong>Limitations in chemical reasoning.</strong> The CoT also shows the current limits of LLM chemical reasoning. The model generated plausible mechanistic hypotheses, but the reasoning is sometimes unclear or simplistic. Improving this is a key step toward Science- or Nature-level discoveries made near- or fully autonomously.</p>
+
+  <p><strong>Ideation was non-linear.</strong> The reasoning trace does not show GPT-5.4 moving directly from the initial prompt to the final TEMPO proposal. It begins with &ldquo;a green-solvent idea,&rdquo; turns into &ldquo;a mechanistic question,&rdquo; and then shifts again after chemists asked the model to keep the substrate scope fixed but &ldquo;explore different reaction conditions.&rdquo; The model also considered the practical constraints of the Maria platform &mdash; dosing, stock concentrations, solubility and analytical readouts &mdash; and abandoned some initially plausible directions once they looked experimentally awkward or hard to interpret. That non-linear process is something scientists know well.</p>
+
+  <p>A coherent picture emerges: the future of autonomous science might look both human-like and machine-like. From this example, the human-like part was the style of reasoning: GPT-5.4 connected ideas across subfields, followed uncertain leads, and revised direction as practical constraints became clear.</p>
+
+  <p>The machine-like part was engineered serendipity. Each cycle tested 5,000 reactions, allowing the system to evaluate risky ideas such as TEMPO in parallel rather than through a slow sequence of experiments. Together, increasingly capable AI reasoning and massively parallel experimentation compressed the loop from initial idea to completed preprint to just three months.</p>
+
+  <p>For centuries, scientists have had to be conservative because experiments were scarce and expensive. If AI can rapidly generate ideas while automated laboratories make experiments cheap, the optimal strategy changes. Instead of carefully selecting a handful of hypotheses to test, we may increasingly explore hundreds of plausible ones in parallel. That shift could fundamentally change how scientific progress is made in fields with access to such rapid experimentation.</p>
+</article>
