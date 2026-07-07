@@ -12,13 +12,13 @@ permalink: /blog/the-future-of-autonomous-science/
     <p class="blog-post-subtitle">A deeper look at how the OAI-M1-03 discovery was made <span class="blog-post-date">Jul 02, 2026</span></p>
   </div>
 
-  <p>On June 17, OpenAI <a href="https://openai.com/index/ai-chemist-improves-reaction/">published</a> a blog post describing how Maria AI &amp; Lab (<a href="https://www.molecule.one/">molecule.one</a>&rsquo;s platform) and GPT-5.4 discovered that TEMPO boosts the yield of Chan&ndash;Lam coupling. Chan-Lam coupling is a chemical reaction important to producing certain drugs. We called the discovery OAI-M1-03.</p>
+  <p>On June 17, OpenAI <a href="https://openai.com/index/ai-chemist-improves-reaction/">published</a> a blog post describing our collaboration using Maria AI &amp; Lab (<a href="https://www.molecule.one/">molecule.one</a>&rsquo;s platform) and GPT-5.4 to discover that TEMPO boosts the yield of Chan&ndash;Lam coupling. Chan-Lam coupling is a chemical reaction important to producing certain drugs. We called the discovery OAI-M1-03.</p>
 
   <p>What made the project distinctive was that (1) the system was given a highly open-ended research objective and operated largely autonomously, (2) it produced a novel, practically useful, and publishable discovery, and (3) the entire process&mdash;from the initial idea to a completed preprint&mdash;took just three months.</p>
 
   <p>We recently published <a href="https://cdn.openai.com/pdf/609ab000-868b-4d20-9b5b-b5bab8c5bf3a/blogpost_cot.pdf">an abridged version of the &ldquo;chain-of-thought&rdquo;</a> that reflects the reasoning behind the discovery, and marks when and how human chemists guided the process.</p>
 
-  <p>I led the project from molecule.one&rsquo;s side and wanted to share a few reflections on what the published reasoning trace reveals.</p>
+  <p>I was fortunate to lead the project from molecule.one&rsquo;s side and wanted to share a few thoughts on the document.</p>
 
   <p>The 9,574-word reasoning trace is not an easy read, but it offers something rare: a window into how a frontier AI system generated, revised, and prioritized scientific ideas. Reading it made me think differently about what autonomous science might ultimately look like.</p>
 
@@ -28,7 +28,7 @@ permalink: /blog/the-future-of-autonomous-science/
 
   <p>The reasoning trace suggests several interesting things.</p>
 
-  <p><strong>Open-ended.</strong> The goal was intentionally broad: improve Chan&ndash;Lam coupling for large-scale manufacturing. GPT-5.4 was not choosing from a fixed menu of additives or conditions. It had to translate a high-level research direction into testable hypotheses. This differs from many prior demonstrations of scientific LLMs, which ask narrower questions within a predefined search space.</p>
+  <p><strong>Open-ended.</strong> We set the goal to be intentionally broad, i.e. to improve Chan&ndash;Lam coupling for large-scale manufacturing. GPT-5.4 was not choosing from a fixed menu of additives or conditions. This differs from many prior demonstrations of scientific LLMs, which often ask narrower questions within a predefined search space.</p>
 
   <p><strong>Novelty came from cross-pollination.</strong> Four reviewers judged the <a href="https://cdn.openai.com/pdf/7136bb75-6d47-4834-8fff-c07c0e06708a/tempo-improves-generality-and-decreases-oxidative-deboronation.pdf">results</a> as impactful and novel: GPT-5.4 suggested using TEMPO, which chemists had not considered as a systematic way to increase the yield of Chan&ndash;Lam coupling. The model appeared to connect TEMPO&rsquo;s use in adjacent oxidative chemistry with its more familiar role in Chan&ndash;Lam coupling as a mechanistic probe for radical pathways. See also the <a href="https://cdn.openai.com/pdf/7136bb75-6d47-4834-8fff-c07c0e06708a/tempo-improves-generality-and-decreases-oxidative-deboronation.pdf">preprint</a> for a detailed discussion of novelty. In effect, the AI was speculating on a possible crossover effect.</p>
 
@@ -36,11 +36,13 @@ permalink: /blog/the-future-of-autonomous-science/
 
   <p><strong>Limitations in chemical reasoning.</strong> The CoT also shows the current limits of LLM chemical reasoning. The model generated plausible mechanistic hypotheses, but the reasoning is sometimes unclear or simplistic. Improving this is a key step toward Science- or Nature-level discoveries made near- or fully autonomously.</p>
 
-  <p><strong>Ideation was non-linear.</strong> The reasoning trace does not show GPT-5.4 moving directly from the initial prompt to the final TEMPO proposal. It begins with &ldquo;a green-solvent idea,&rdquo; turns into &ldquo;a mechanistic question,&rdquo; and then shifts again after chemists asked the model to keep the substrate scope fixed but &ldquo;explore different reaction conditions.&rdquo; The model also considered the practical constraints of the Maria platform &mdash; dosing, stock concentrations, solubility and analytical readouts &mdash; and abandoned some initially plausible directions once they looked experimentally awkward or hard to interpret. That non-linear process is something scientists know well.</p>
+  <p><strong>Ideation was non-linear.</strong> The reasoning trace does not show GPT-5.4 moving directly from the initial prompt to the final TEMPO proposal. In fact, it begins with &ldquo;a green-solvent idea,&rdquo; turns into &ldquo;a mechanistic question,&rdquo; and then shifts again after chemists asked the model to keep the substrate scope fixed but &ldquo;explore different reaction conditions.&rdquo; The model also considered the practical constraints of the Maria platform &mdash; dosing, stock concentrations, solubility and analytical readouts &mdash; and abandoned some initially plausible directions once they looked experimentally awkward or hard to interpret. That non-linear process is something scientists know well.</p>
 
-  <p>A coherent picture emerges: the future of autonomous science might look both human-like and machine-like. From this example, the human-like part was the style of reasoning: GPT-5.4 connected ideas across subfields, followed uncertain leads, and revised direction as practical constraints became clear.</p>
+  <p>My bet is that the future of autonomous science will look both human-like and machine-like. From this example, the human-like part was the style of reasoning: GPT-5.4 connected ideas across subfields, followed uncertain leads, and revised direction as practical constraints became clear.</p>
 
-  <p>The machine-like part was engineered serendipity. Each cycle tested 5,000 reactions, allowing the system to evaluate risky ideas such as TEMPO in parallel rather than through a slow sequence of experiments. Together, increasingly capable AI reasoning and massively parallel experimentation compressed the loop from initial idea to completed preprint to just three months.</p>
+  <p>But the machine-like part was engineered serendipity. Each cycle tested 5,000 reactions, allowing the system to evaluate risky ideas such as TEMPO in parallel rather than through a slow sequence of experiments. Together, increasingly capable AI reasoning and massively parallel experimentation compressed the loop from initial idea to completed preprint to just three months.</p>
 
-  <p>For centuries, scientists have had to be conservative because experiments were scarce and expensive. If AI can rapidly generate ideas while automated laboratories make experiments cheap, the optimal strategy changes. Instead of carefully selecting a handful of hypotheses to test, we may increasingly explore hundreds of plausible ones in parallel. That shift could fundamentally change how scientific progress is made in fields with access to such rapid experimentation.</p>
+  <p>For centuries, scientists have had to be conservative because experiments were scarce and expensive. The optimal strategy changes if AI can rapidly generate ideas while automated laboratories make experiments cheap. Instead of carefully selecting a handful of hypotheses to test, we may increasingly explore hundreds of plausible ones in parallel.</p>
+
+  <p>This shift has the potential to fundamentally change the rate of scientific progress.</p>
 </article>
