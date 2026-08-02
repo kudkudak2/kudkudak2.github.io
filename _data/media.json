@@ -1,5 +1,12 @@
 [
   {
+    "img": "/assets/img/media/xyz.svg",
+    "source": "XYZ",
+    "title": "The race to build the AI scientist. A Polish startup wants to win it",
+    "details": "XYZ, July 2026.",
+    "url": "https://xyz.pl/poland-unpacked/the-race-to-build-the-ai-scientist-a-polish-startup-wants-to-win-it-2644/"
+  },
+  {
     "img": "/assets/img/media/semafor.svg",
     "source": "Semafor",
     "title": "OpenAI's chemistry tool",
