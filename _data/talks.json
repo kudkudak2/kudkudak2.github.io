@@ -1,6 +1,13 @@
 [
   {
     "img": "/assets/img/talks/slas2026.png",
+    "title": "Automated Labs for Venturing Beyond Known Chemistry: How Maria Enabled Near-Autonomous Discovery in our OpenAI Collaboration",
+    "content": "Automated Synthesis Forum 2026",
+    "details": "November 10–11, 2026. Invited talk.",
+    "url": "https://automatedsynthesisforum.com/"
+  },
+  {
+    "img": "/assets/img/talks/slas2026.png",
     "title": "μSpaceM1: a new type of molecular space based on HTE chemical data",
     "content": "SLAS 2026, Boston, USA.",
     "details": "2026. Podium presentation.",
