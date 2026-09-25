@@ -7,6 +7,20 @@
     "url": "https://automatedsynthesisforum.com/"
   },
   {
+    "img": "/assets/img/talks/chemai.svg",
+    "title": "Automating the process of scientific discovery in practice: a deep dive into Molecule.one and OpenAI near-autonomous discovery in organic chemistry",
+    "content": "ChemAI 2026, Amsterdam, Netherlands",
+    "details": "November 12–13, 2026. Invited talk.",
+    "url": "https://www.acnetwork.nl/chemai"
+  },
+  {
+    "img": "/assets/img/talks/dss2026.png",
+    "title": "Automating the process of scientific discovery in practice: a deep dive into Molecule.one and OpenAI near-autonomous discovery in organic chemistry",
+    "content": "Data Science Summit 2026, Warsaw, Poland",
+    "details": "November 27, 2026. Invited main stage talk.",
+    "url": "https://main.dssconf.pl/"
+  },
+  {
     "img": "/assets/img/talks/slas2026.png",
     "title": "μSpaceM1: a new type of molecular space based on HTE chemical data",
     "content": "SLAS 2026, Boston, USA.",

@@ -425,6 +425,13 @@ cells {
       display: block;
       background: rgba(0, 0, 0, 0.04);
     }
+
+    > img[src$="chemai.svg"] {
+      box-sizing: border-box;
+      object-fit: contain;
+      padding: 0.5em;
+      background: #082f2a;
+    }
   }
 
   .cell-content {
